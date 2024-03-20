@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="text-center font-bold"> Inicio </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [formGroup]="form">
+  <ion-input formControlName="stringValue"></ion-input>
+
+  <div class="icons">
+    <ion-icon
+      style="
+        background-color: #3880ff;
+        padding: 12px;
+        color: white;
+        margin-right: 10px;
+        font-size: 24px;
+      "
+      name="gallery"
+      src="assets/gallery.svg"
+      class="icon-background"
+    >
+    </ion-icon>
+
+    <ion-icon
+      (click)="getLocation()"
+      style="
+        background-color: #3880ff;
+        padding: 12px;
+        color: white;
+        font-size: 24px;
+      "
+      name="location"
+      class="icon-background"
+      src="assets/location.svg"
+    >
+    </ion-icon>
+  </div>
+</ion-content>

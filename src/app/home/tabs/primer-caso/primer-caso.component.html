@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="text-center font-bold"> Pokedex </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="pokemon-list">
+    <ion-item class="border-radius shadow" *ngFor="let pokemon of pokemonList">
+      <ion-label class="pokemon-card">
+        <h2 class="card-title">{{ pokemon.name.toUpperCase() }}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

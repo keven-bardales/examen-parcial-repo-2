@@ -1,0 +1,7 @@
+{
+  "name": "examen-parcial-repo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

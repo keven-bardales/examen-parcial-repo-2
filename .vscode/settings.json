@@ -1,0 +1,16 @@
+{
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "@ionic/angular/common",
+    "@ionic/angular"
+  ],
+  "angular-schematics.schematicsDefaultOptions": {
+    "angular-*": {
+      "externalTemplate": true,
+      "inlineStyle": true,
+      "skipStyle": true
+    },
+    "angular-component": {
+      "ngOnInit": true
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="text-center font-bold">Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [formGroup]="form">
+  <ion-img *ngIf="imageUrl" [src]="imageUrl"></ion-img>
+
+  <ion-input
+    placeholder="Que estas pensando hoy?"
+    formControlName="stringValue"
+  ></ion-input>
+
+  <div class="icons">
+    <ion-icon
+      (click)="takePicture()"
+      style="
+        background-color: #3880ff;
+        padding: 12px;
+        color: white;
+        margin-right: 10px;
+        font-size: 24px;
+      "
+      src="assets/gallery.svg"
+      name="camera"
+    >
+    </ion-icon>
+
+    <ion-icon
+      (click)="pickImage()"
+      style="
+        background-color: #3880ff;
+        padding: 12px;
+        color: white;
+        font-size: 24px;
+      "
+      name="images"
+      src="assets/location.svg"
+    >
+    </ion-icon>
+  </div>
+</ion-content>
